@@ -5,10 +5,9 @@ library(dplR)
 ###################### Import Wood data ######################################
 
 # Import Data
-#setwd("C:/Users/VegaB002/OneDrive - Universiteit Utrecht/Pictures/2023_10_27/8.duqueco/input")
 setwd("~/CONDOR/8.duqueco/input")
 
-# output_dir <- "C:/Users/VegaB002/OneDrive - Universiteit Utrecht/Pictures/2023_10_27/8.duqueco/output"
+# Select Folder (Save examples in this folder)
 output_dir <- "~/CONDOR/8.duqueco/output"
 
 ####################### Samples ############################################
@@ -45,7 +44,7 @@ saved_points <- ('~/CONDOR/8.duqueco/output')
 extension = "_points.RData"
 points.path <- paste0(saved_points, BEST_SERIE, extension)
 str(points.path)
-load(points.path) #
+load(points.path)
 loaded <- paste0("t", substr(BEST_SERIE2, start = 5, stop = 6),".4")
 str(loaded)
 # Call the plots
